@@ -26,3 +26,20 @@ After that we call the first get request of the {baseUrl}user. This gets all my 
 <img src="img/baseUser.png"> 
 Lastly I created a repo using a post request in postman. I took the two variable baseurl and createRepo above and then we have to add a body in raw/json format.
 <img src="img/createRepo.png">
+
+### Day 5
+Today I downloaded the Thunder Client Extension to VSCode. The first Thing I did was create an environment with the name Github and set a variable for my bearer token and set it to secret. 
+<img src="img/thunderEnv.png">
+ 
+I then created an collection with the name GitHub and set the auth to bearer
+and the value to my pat-github from before.
+<img src="img/collection.png">
+ I also set a base url for github which makes the creation of request much easier and looks good.
+ <img src="img/baseUrl.png"> Noted you cant set variables in collections like you can on postman but you can make local environments and global ones as well to set any variables you might need. I went ahead and created a create variable thats used for creating new repos.
+<img src="img/variables.png">
+I then went and created a get request for user info which is my basic info. Only needed to add user to the request since i set the base Url.
+<img src="img/user.png">
+
+After that i created a folder called repos and added a post request with the variable I had set earlier called create.
+<img src="img/create.png">
+As you can see i got a status of 201 created and shows all the information on the creation of the new repo.
